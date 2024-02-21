@@ -3,7 +3,7 @@ import React, {createContext, useContext, useState} from "react";
 const Context = createContext();
 export const Provider = ({children}) => {
 
-    const serverUrl = 'http://localhost:5003';
+    const serverUrl = 'https://table-generation-server-node.onrender.com';
 
     const [data, setData] = useState([]);
     const [username, setUsername] = useState("");
