@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-center {
+  @apply flex justify-center items-center
+}
+
+
+.box {
+  @apply flex-center flex-col w-full h-screen
+}
+
+.first-level-box {
+  @apply flex-center flex-col w-full p-2
+}
+
+.table-box {
+  @apply flex flex-col justify-center w-[1350px] bg-black
+}
+
+.table-header-container {
+  @apply flex justify-center w-full bg-black
+}
+
+.table-body-container {
+  @apply border-2 border-solid border-red-800 overflow-y-scroll max-h-[600px]
+}
+
+.table {
+  @apply table-fixed overflow-scroll w-full justify-center outline-none
+}
+
+.table-header-id {
+  @apply w-[100px] h-[50px] border-[1px] border-solid border-gray-500 p-1 text-[17px] font-serif sticky top-0
+}
+.table-body-id {
+  @apply w-[100px] text-[17px] font-serif border-[1px] border-solid border-gray-500 p-1
+}
+
+.table-data {
+  @apply border-[1px] border-solid border-gray-500 p-1
+}
+
+.table-header {
+  @apply w-full h-[50px] border-[1px] border-solid border-gray-500 p-1 text-[17px] font-serif sticky top-0
+}
+
+.table-body {
+  @apply min-h-[50px] overflow-y-scroll max-h-[600px]
+}
+
+.table-row {
+  @apply text-center text-white hover:bg-gray-500 break-words px-12
+}
+
+.button-container {
+  @apply flex flex-row justify-center items-center space-x-4 bg-red-950
+}
+
+.button {
+  @apply font-bold text-[17px] hover:text-blue-500 flex-center flex-row space-x-2
+}
+
+.seed-box {
+  @apply flex-center flex-row space-x-4
+}
+
+.seed-container {
+  @apply border-[1px] border-amber-50
+}
+
+.seed-button {
+  @apply text-[20px] hover:text-blue-500
+}
+
+.seed-input {
+  @apply text-center w-[100px] p-1 rounded-[5px]
+  bg-transparent ring-0 outline-none text-white
+}
+
+.region-selector-form {
+  @apply max-w-sm mx-auto flex-center flex-row space-x-4 p-4
+}
+
+.region-selector {
+  @apply block w-[200px] p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+  focus:ring-blue-500 focus:border-blue-500
+  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+  dark:text-white dark:focus:ring-blue-500
+  dark:focus:border-blue-500
+}
+
+.export-button-container {
+  @apply flex-center w-full
+}
+
+.export-button {
+  @apply flex-center flex-row w-[200px] space-x-4
+  px-4 py-2 text-[20x] bg-red-600 hover:bg-red-800 rounded-lg
+  text-lg font-medium text-gray-900 dark:text-white
+}
+
+
+
+
+
